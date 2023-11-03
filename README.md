@@ -1,6 +1,12 @@
 # wsrpc
 a tiny websocket rpc library.
 
+## Install
+
+```sh
+go get github.com/weiwenchen2022/wsrpc
+```
+
 ## Uasage
 
 ### define service
@@ -65,3 +71,7 @@ divCall := client.Go("Arith.Divide", args, quotient, nil)
 <-divCall.Done	// will be equal to divCall
 // check errors, print, etc.
 ```
+
+## Reference
+
+GoDoc: [https://pkg.go.dev/github.com/weiwenchen2022/wsrpc](https://pkg.go.dev/github.com/weiwenchen2022/wsrpc)
